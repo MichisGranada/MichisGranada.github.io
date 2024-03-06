@@ -24,6 +24,8 @@ header{
   text-align: center;
 }
 nav{
+  border: 2px solid black;
+  border-radius: 10px;
   grid-area: nav;
 }
 main{
@@ -77,6 +79,8 @@ aside{
   grid-area: aside;
 }
 footer{
+  border: 2px solid black;
+  border-radius: 10px;
   grid-area: footer;
 }
 nav ul {
