@@ -3,7 +3,7 @@
 }
 *{
     box-sizing: border-box;
-
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
   background-color: rgb(114, 175, 114);
@@ -21,6 +21,7 @@ body{
 }
 header{
   grid-area: header;
+  text-align: center;
 }
 nav{
   grid-area: nav;
@@ -88,7 +89,7 @@ nav ul {
 nav li {
     float: left;
 }  
- nav li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -98,23 +99,24 @@ nav li {
 nav li a:hover {
     background-color: #1d5524;
 }
-nav ul {
-    list-style-type: none;
+
+footer ul{
+  list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: var(--nav-bg-color);
 }
-nav li {
-    float: left;
-}  
- nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+footer li{
+  float: left;
+}
+footer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 } 
-nav li a:hover {
-    background-color: #1d5524;
+footer li a:hover {
+  background-color: #1d5524;
 }
