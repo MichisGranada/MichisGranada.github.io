@@ -7,9 +7,21 @@ body{
     background-color: rgb(114, 175, 114);
 }
 #formulario{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(8, auto);
     border: 2px solid black;
     border-radius: 10px;
     padding: 15px;
     margin-top: 80px;
     background-color: var(--nav-bg-color);
+    grid-template-areas: 
+    "titulo titulo"
+    "nombre apellidos"
+    "email email"
+    "telefono telefono"
+    "calle calle"
+    "provincia ciudad"
+    "codigoPostal codigoPostal"
+    ;
 }
