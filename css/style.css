@@ -1,3 +1,6 @@
+:root{
+    --nav-bg-color: #2a8636;
+}
 *{
     box-sizing: border-box;
 
@@ -89,3 +92,43 @@ h1 {
     width: 160px;
     font-size: 18px;
   }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg-color);
+}
+nav li {
+    float: left;
+}  
+ nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+nav li a:hover {
+    background-color: #1d5524;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg-color);
+}
+nav li {
+    float: left;
+}  
+ nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+nav li a:hover {
+    background-color: #1d5524;
+}
