@@ -27,6 +27,13 @@ nav{
 }
 main{
   grid-area: main;
+  display: grid;
+  grid-template-rows: repeat(3, 33%);
+  grid-template-areas: 
+  "presentacion"
+  "ubicacion"
+  "info perros"
+  ;
 }
 aside{
   grid-area: aside;
