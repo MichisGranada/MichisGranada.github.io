@@ -1,0 +1,15 @@
+:root{
+    --nav-bg-color: #2a8636;
+}
+body{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(114, 175, 114);
+}
+#formulario{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 80px;
+    background-color: var(--nav-bg-color);
+}

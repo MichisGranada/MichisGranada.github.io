@@ -1,0 +1,126 @@
+:root{
+    --nav-bg-color: #2a8636;
+}
+*{
+    box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-color: rgb(114, 175, 114);
+   width: 90%;
+   margin: auto; 
+   display: grid;
+   grid-template-columns: 80% 20%;
+   grid-template-rows: 10% 10% 70% 10%;
+   grid-template-areas: 
+   "header header"
+   "nav    nav"
+   "main   aside"
+   "main   aside"
+   "footer footer";
+}
+header{
+  grid-area: header;
+  text-align: center;
+}
+nav{
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-area: nav;
+}
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-rows: repeat(3, 33%);
+  grid-template-areas: 
+  "presentacion"
+  "ubicacion"
+  "info perros"
+  ;
+}
+/*slider article1*/
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 50%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+aside{
+  grid-area: aside;
+}
+footer{
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-area: footer;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg-color);
+}
+nav li {
+    float: left;
+}  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+nav li a:hover {
+    background-color: #1d5524;
+}
+
+footer ul{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg-color);
+}
+footer li{
+  float: left;
+}
+footer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+footer li a:hover {
+  background-color: #1d5524;
+}
