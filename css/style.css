@@ -3,10 +3,40 @@
 }
 *{
     box-sizing: border-box;
+
 }
 body{
    width: 90%;
    margin: auto; 
+   display: grid;
+   grid-template-columns: 80% 20%;
+   grid-template-rows: 10% 10% 70% 10%;
+   grid-template-areas: 
+   ".    header"
+   "main aside"
+   "main aside"
+   "main ."
+   "footer footer";
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg-color);
+}
+nav li {
+    float: left;
+}  
+ nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+nav li a:hover {
+    background-color: #1d5524;
 }
 nav ul {
     list-style-type: none;
