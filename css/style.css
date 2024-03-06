@@ -13,7 +13,7 @@ body{
    grid-template-columns: 80% 20%;
    grid-template-rows: 10% 10% 70% 10%;
    grid-template-areas: 
-   "header ."
+   "header header"
    "nav    nav"
    "main   aside"
    "main   aside"
@@ -45,7 +45,7 @@ main{
 .slider ul {
 	display: flex;
 	padding: 0;
-	width: 400%;
+	width: 500%;
 	
 	animation: cambio 20s infinite alternate linear;
 }
@@ -56,7 +56,7 @@ main{
 }
 
 .slider img {
-	width: 100%;
+	width: 50%;
 }
 
 @keyframes cambio {
